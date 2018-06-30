@@ -12,7 +12,7 @@ RUN   apt-get update \
    && wget https://dl.google.com/go/${GOARCHIVE} \
    && tar -C /usr/local -xzf ${GOARCHIVE} \
    && rm -f ${GOARCHIVE} \
-   && GORELEASERARCHIVE=goreleaser_Linux_arm64.tar.gz \
+   && GORELEASERARCHIVE=goreleaser_Linux_x86_64.tar.gz \
    && wget https://github.com/goreleaser/goreleaser/releases/download/${GORELEASERVERSION}/${GORELEASERARCHIVE} \
    && tar -C /tmp -xf ${GORELEASERARCHIVE} \
    && mv /tmp/goreleaser /usr/local/bin \
