@@ -6,7 +6,7 @@ ENV PATH=$PATH:/usr/local/go/bin \
     GORELEASERVERSION=v0.79.0
 
 RUN   apt-get update \
-   && apt-get install -y wget curl \
+   && apt-get install -y wget curl zip \
    && mkdir /go \
    && GOARCHIVE=go${GOVERSION}.linux-amd64.tar.gz \
    && wget https://dl.google.com/go/${GOARCHIVE} \
